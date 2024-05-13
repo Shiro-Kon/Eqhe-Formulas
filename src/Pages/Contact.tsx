@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { Switch } from '@headlessui/react'
 import TeamSection from '../Components/TeamSection'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -156,9 +157,9 @@ const Contact = (props: Props) => {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-rose-600">
+              <Link to="/" className="font-semibold text-rose-600">
                 privacy&nbsp;policy
-              </a>
+              </Link>
               .
             </Switch.Label>
           </Switch.Group>
